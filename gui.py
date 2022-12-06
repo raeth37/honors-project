@@ -6,6 +6,7 @@ main.geometry("200x200")
 main.title("Start")
 
 def sim():
+    """simulates the more interactive simulator"""
     g = Pairs()
     w1 = tk.Toplevel(main)
     w1.title("Simulation")
@@ -14,6 +15,7 @@ def sim():
     g.simulation(w1)
 
 def create_sim(e1, l1, window, button):
+    """helper to print out text for quick_sim"""
     g1 = Pairs()
     var = int(e1.get())
 
@@ -29,6 +31,7 @@ def create_sim(e1, l1, window, button):
     text.insert(tk.INSERT, txt)
 
 def quick_sim():
+    """simulates quick simulator"""
     w2 = tk.Toplevel(main)
     w2.title("Simulation")
     w2.geometry("1100x1000")
